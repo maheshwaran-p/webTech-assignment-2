@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Form</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
 </head>
 
 <body>
-   
+   <style>
+       body{align-self: center;
+           color: #000;
+           background:greenyellow;
+           
+           background-image: url("https://tse3.mm.bing.net/th?id=OIP.Dngzg47I_lg1lu8ypug11wHaE8&pid=Api&P=0&w=275&h=184" );
+         
+         height: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+           
+       }
+   </style>
     <form style="padding-left: 20px;" enctype="multipart/form-data" onsubmit="return validate()"><br>
         Username : <input type="text" name="username" id="username" required><br><br>
         D.O.B : <input type="date" name="dob" id="dob" required><br><br>
@@ -18,7 +34,7 @@
         <button type="submit">submit</button>
     </form>
   
-</body>
+
 <script>
    
     function validate() {
@@ -43,7 +59,7 @@
         }
         else if (validPassword == false) {
             submitCheck = false;
-            window.alert("Password lenth should be greater than 7 and at least contains one Upper case , Lower case , numerical and symbol.");
+            window.alert("Password lenth should be greater than 7 and at least contains one Upper case , Lower case ,numericaland symbol");
         }
         if (submitCheck)
             window.location.href="second.html";
@@ -97,5 +113,5 @@
         return isPasswordValid;
     }
 </script>
-
+</body>
 </html>
